@@ -21,13 +21,13 @@
             <form class="quick-access__form" action="#" method="get">
                 <input type="search" placeholder="Поиск:">
             </form>
-            <ul class="quick-access__links">
-                <li class="quick-access__link">
+            <ul class="quick-access__items">
+                <li class="quick-access__item bookmarks">
                     <a href="blank.html">
                         Закладки: 0
                     </a>
                 </li>
-                <li class="quick-access__link">
+                <li class="quick-access__item cart">
                     <a href="blank.html">
                         Корзина: 0
                     </a>
@@ -140,32 +140,51 @@
             <a class="favorites__link" href="blank.html">все популярные товары</a>
             <ul class="favorites__list product-list">
                 <li class="product-list__product product">
-                    <h3 class="product__header">Перфоратор <span class="product__name">bosch<br> bfg 9000</span></h3>
-                    <img class="product__image" src="img/bosch-bfg/9000.jpg" width="184" height="164"
-                        alt="Перфоратор с длинным буром">
-                    <span class="product__old-price">32500 Р.</span>
-                    <span class="product__actual-price">25500 Р.</span>
+                    <a class="product__link" href="blank.html">
+                        <h3 class="product__header">Перфоратор <span class="product__name">bosch<br> bfg 9000</span>
+                        </h3>
+                        <p class="product__content">
+                            <img class="product__image" src="img/bosch-bfg/9000.jpg" width="184" height="164"
+                                alt="Перфоратор с длинным буром">
+                        </p>
+                    </a>
+                    <p class="product__prices">
+                        <span class="product__price_old">32500 Р.</span>
+                        <span class="product__price_actual">25500 Р.</span>
+                    </p>
                 </li>
                 <li class="product-list__product product">
-                    <h3 class="product__header">Перфоратор <span class="product__name">bosch<br>bfg 3000</span></h3>
-                    <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
-                        alt="Мощная аккамуляторная дрель">
-                    <span class="product__old-price">22500 Р.</span>
-                    <span class="product__actual-price">15500 Р.</span>
+                    <a class="product__link" href="blank.html">
+                        <h3 class="product__header">Перфоратор <span class="product__name">bosch<br>bfg 3000</span></h3>
+                        <p class="product__content">
+                            <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
+                                alt="Мощная аккамуляторная дрель">
+                        </p>
+                    </a>
+                    <span class="product__price_old">22500 Р.</span>
+                    <span class="product__price_actual">15500 Р.</span>
                 </li>
                 <li class="product-list__product product">
-                    <h3 class="product__header">Перфоратор <span class="product__name">bosch<br>bfg 6000</span></h3>
-                    <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
-                        alt="Аккамуляторная ударная дрель">
-                    <span class="product__old-price">30500 Р.</span>
-                    <span class="product__actual-price">25500 Р.</span>
+                    <a class="product__link" href="blank.html">
+                        <h3 class="product__header">Перфоратор <span class="product__name">bosch<br>bfg 6000</span></h3>
+                        <p class="product__content">
+                            <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
+                                alt="Аккамуляторная ударная дрель">
+                        </p>
+                    </a>
+                    <span class="product__price_old">30500 Р.</span>
+                    <span class="product__price_actual">25500 Р.</span>
                 </li>
                 <li class="product-list__product product">
-                    <h3 class="product__header">Перфоратор <span class="product__name">bosch<br>bfg 2000</span></h3>
-                    <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
-                        alt="Аккамуляторная дрель">
-                    <span class="product__old-price">22500 Р.</span>
-                    <span class="product__actual-price">15500 Р.</span>
+                    <a class="product__link" href="blank.html">
+                        <h3 class="product__header">Перфоратор <span class="product__name">bosch<br>bfg 2000</span></h3>
+                        <p class="product__content">
+                            <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
+                                alt="Аккамуляторная дрель">
+                        </p>
+                    </a>
+                    <span class="product__price_old">22500 Р.</span>
+                    <span class="product__price_actual">15500 Р.</span>
                 </li>
             </ul>
         </section>
@@ -246,8 +265,8 @@
 
         <section class="page-main__about about">
             <h2 class="about__header">О компании</h2>
-            <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-                равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+                строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
             <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
             <p class="about__text">Техномарт работает со многими транспортными компаниями:</p>
             <ul class="about__list">
@@ -272,7 +291,8 @@
     <footer class="page-footer">
         <div class="page-footer__top">
             <a class="page-footer__logo-link">
-                <img class="page-footer__logo-image" src="img/logo/thick.svg" width="220" height="68" alt="Логотип Техномарт">
+                <img class="page-footer__logo-image" src="img/logo/thick.svg" width="220" height="68"
+                    alt="Логотип Техномарт">
             </a>
 
             <section class="page-footer__address footer-address">
@@ -286,15 +306,22 @@
             <section class="page-footer__links footer-links">
                 <h2 class="footer-links__header">Ссылки</h2>
                 <ul class="footer-links__list">
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Компания</a></li>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Компания</a>
+                    </li>
                     <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Новости</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="catalog.html">Каталог</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Доставка</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Контакты</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Материалы</a></li>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Доставка</a>
+                    </li>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Контакты</a>
+                    </li>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Материалы</a>
+                    </li>
                     <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Техника</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Инструмент</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Спецпредложения</a></li>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Инструмент</a>
+                    </li>
+                    <li class="footer-links__list-item"><a class="footer-links__link"
+                            href="blank.html">Спецпредложения</a></li>
                 </ul>
             </section>
         </div>
