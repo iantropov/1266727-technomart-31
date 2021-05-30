@@ -9,6 +9,11 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -19,7 +24,7 @@
                 <img src="img/logo/thin.svg" width="220" height="47" alt="Логотип Техномарт">
             </a>
             <form class="quick-access__form" action="#" method="get">
-                <input type="search" placeholder="Поиск:">
+                <input class="quick-access__search" type="search" placeholder="Поиск:">
             </form>
             <ul class="quick-access__items">
                 <li class="quick-access__item bookmarks">
@@ -52,8 +57,8 @@
                 </span>
             </p>
             <p class="header-info__header-buttons header-buttons">
-                <a class="header-buttons__signin" href="blank.html">Войти</a>
-                <a class="header-buttons__signup" href="blank.html">Регистрация</a>
+                <a class="header-buttons__button header-buttons__button_signin" href="blank.html">Войти</a>
+                <a class="header-buttons__button header-buttons__button_signup" href="blank.html">Регистрация</a>
             </p>
         </section>
 

@@ -1,0 +1,122 @@
+/* Variables */
+
+:root {
+    --basic-red: #ee3643;
+    --basic-green: #63a63e;
+    --basic-grey: #3d546f;
+    --basic-greylight: #c5c5c5;
+    --basic-background: #f1f5f7;
+    --basic-greydark: #293449;
+    --basic-bluedark: #32425c;
+    --black: #000000;
+    --white: #ffffff;
+    --special-ylellow: #ffbf47;
+    --special-blue: #3bbce3;
+    --special-lilac: #dc91d8;
+    --special-greenlight: #8ed78f;
+    --special-yellowlight: #ffd180;
+    --success: #5fbb2d;
+    --warning: #ffbf47;
+    --error: #ba2732;
+    --greylight: #eaeaea;
+
+    --text-font-family: "PT Sans", Arial, sans-serif;
+    --heading-font-family: "Cuprum", Arial, sans-serif;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* page-header */
+
+.page-header {
+    background-color: var(--basic-background);
+    font-family: var(--heading-font-family);
+}
+
+/* quick-access */
+
+.quick-access {
+    background-color: var(--basic-greydark);
+    font-family: var(--heading-font-family);
+    font-size: 18px;
+}
+
+.quick-access__search {
+    background-color: inherit;
+    border: none;
+}
+
+.quick-access__items {
+    list-style: none;
+}
+
+.quick-access__item a {
+    color: var(--white);
+}
+
+.quick-access__submit {
+    color: var(--white);
+    background-color: var(--basic-green);
+}
+
+/* header-info */
+
+.header-info__text {
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+/* header-contacts */
+
+.header-contacts__phone {
+    color: var(--basic-red);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    border: 3px solid var(--white);
+}
+
+/* header-buttons */
+
+.header-buttons__button {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/* header-nav */
+
+.header-nav__list {
+    list-style: none;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: var(--basic-bluedark);
+}
+
+.header-nav__list-item a {
+    color: var(--white);
+}
+
