@@ -16,6 +16,7 @@
     --special-grey: #f9f5f0;
     --special-greylight: #a9a9a9;
     --special-greenlight: #8ed78f;
+    --special-greydark: #212a3a;
     --special-yellowlight: #ffd180;
     --success: #5fbb2d;
     --warning: #ffbf47;
@@ -324,4 +325,77 @@ img {
 .about__list-item {
     font-size: 18px;
     line-height: 24px;
+}
+
+/* page-footer */
+
+.page-footer__top {
+    background-color: var(--basic-bluedark);
+}
+
+.page-footer__bottom {
+    background-color: var(--basic-greydark);
+}
+
+/* footer-address */
+
+.footer-address__text {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+/* footer-links */
+
+.footer-links__first-list,
+.footer-links__second-list {
+    list-style: none;
+}
+
+.footer-links__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-background);
+}
+
+.footer-links__link_second {
+    color: var(--special-yellowlight);
+}
+
+/* copyright */
+
+.copyright__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+/* social */
+
+.social__list {
+    list-style: none;
+}
+
+.social__list-item {
+    background-color: var(--special-greydark);
+}
+
+.social__link {
+    color: var(--white);
+}
+
+/* additionals */
+
+.additionals__list {
+    list-style: none;
+}
+
+.additionals__list-item {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.additionals__link {
+    color: var(--special-yellowlight);
 }
