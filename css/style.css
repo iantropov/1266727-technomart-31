@@ -10,9 +10,11 @@
     --basic-bluedark: #32425c;
     --black: #000000;
     --white: #ffffff;
-    --special-ylellow: #ffbf47;
+    --special-yellow: #ffbf47;
     --special-blue: #3bbce3;
     --special-lilac: #dc91d8;
+    --special-grey: #f9f5f0;
+    --special-greylight: #a9a9a9;
     --special-greenlight: #8ed78f;
     --special-yellowlight: #ffd180;
     --success: #5fbb2d;
@@ -20,8 +22,8 @@
     --error: #ba2732;
     --greylight: #eaeaea;
 
-    --text-font-family: "PT Sans", Arial, sans-serif;
-    --heading-font-family: "Cuprum", Arial, sans-serif;
+    --primary-font-family: "Cuprum", Arial, sans-serif;
+    --secondary-font-family: "PT Sans", Arial, sans-serif;
 }
 
 /* Global */
@@ -30,7 +32,7 @@ body {
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: var(--text-font-family);
+    font-family: var(--primary-font-family);
     font-size: 14px;
     line-height: 24px;
     color: var(--black);
@@ -50,14 +52,14 @@ img {
 
 .page-header {
     background-color: var(--basic-background);
-    font-family: var(--heading-font-family);
+    font-family: var(--primary-font-family);
 }
 
 /* quick-access */
 
 .quick-access {
     background-color: var(--basic-greydark);
-    font-family: var(--heading-font-family);
+    font-family: var(--primary-font-family);
     font-size: 18px;
 }
 
@@ -120,3 +122,206 @@ img {
     color: var(--white);
 }
 
+/* features */
+
+.features__list {
+    list-style: none;
+}
+
+/* feature */
+
+.feature {
+    font-family: var(--primary-font-family);
+}
+
+.feature__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+.feature__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--white);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
+
+.feature_materials {
+    background-color: var(--special-yellow);
+}
+
+.feature_instrument {
+    background-color: var(--special-blue);
+}
+
+.feature_technic {
+    background-color: var(--special-lilac);
+}
+
+.feature_discounts {
+    background-color: var(--special-greenlight);
+}
+
+.feature_delivery {
+    background-color: var(--special-yellow);
+}
+
+/* slider */
+
+.slider {
+    font-family: var(--primary-font-family);
+    color: var(--white);
+}
+
+.slider__header {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.slider__text {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* button-link */
+
+.button-link {
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--basic-red);
+}
+
+/* favorites */
+
+.favorites__top {
+    background-color: var(--special-grey);
+}
+
+/* section-header */
+
+.section-header {
+    font-family: var(--primary-font-family);
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+/* section-text */
+
+.section-text {
+    font-family: var(--secondary-font-family);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+/* product-list */
+
+.product-list {
+    list-style: none;
+}
+
+/* product */
+
+.product {
+    border: 1px solid var(--greylight);
+    font-family: var(--secondary-font-family);
+}
+
+.product__header {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+}
+
+.product__name {
+    text-transform: uppercase;
+}
+
+.product__price {
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.product__price_old {
+    color: var(--special-greylight);
+    text-decoration: line-through;
+}
+
+.product__price_actual {
+    color: var(--white);
+    background-color: var(--basic-red);
+}
+
+/* manufacturers */
+
+.manufacturers__top {
+    background-color: var(--special-grey);
+}
+
+.manufacturers__list {
+    list-style: none;
+}
+
+/* manufacturer */
+
+.manufacturer {
+    border: 1px solid var(--greylight);
+}
+
+/* services */
+
+.services {
+    background-color: var(--basic-background);
+    font-family: var(--secondary-font-family);
+}
+
+/* services-tabs-list */
+
+.services-tabs-list {
+    list-style: none;
+}
+
+.services-tabs-list__item {
+    background-color: var(--basic-bluedark);
+    color: var(--white);
+}
+
+.services-tabs-list__link {
+    font-family: var(--primary-font-family);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.services-tabs-list__item_active {
+    background-color: var(--white);
+    color: var(--basic-bluedark);
+}
+
+/* about */
+
+.about__list {
+    list-style: none;
+}
+
+.about__list-item {
+    font-size: 18px;
+    line-height: 24px;
+}
