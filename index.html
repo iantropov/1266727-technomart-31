@@ -388,18 +388,20 @@
         <h2 class="feedback__header">Форма обратной связи</h2>
         <form class="feedback__form feedback-form" action="#" method="post">
             <p class="feedback-form__name">
-                <label for="feedback-name">Ваше имя:</label>
-                <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+                <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+                <input class="feedback-form__input" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
             <p class="feedback-form__email">
-                <label for="feedback-email">Ваш e-mail:</label>
-                <input id="feedback-email" type="email" name="email" placeholder="email@exchange.com">
+                <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+                <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@exchange.com">
             </p>
             <p class="feedback-form__text">
-                <label for="feedback-text">Текст письма:</label>
-                <textarea id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
+                <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+                <textarea class="feedback-form__input" id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="feedback-form__submit" type="submit">Отправить</button>
+            <div class="feedback-form__bottom">
+                <button class="feedback-form__submit button-link" type="submit">Отправить</button>
+            </div>
         </form>
         <button class="feedback__close" type="button">Закрыть</button>
     </section>

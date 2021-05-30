@@ -22,6 +22,7 @@
     --warning: #ffbf47;
     --error: #ba2732;
     --greylight: #eaeaea;
+    --grey: #f4f4f4;
 
     --primary-font-family: "Cuprum", Arial, sans-serif;
     --secondary-font-family: "PT Sans", Arial, sans-serif;
@@ -398,4 +399,29 @@ img {
 
 .additionals__link {
     color: var(--special-yellowlight);
+}
+
+/* feedback-form */
+
+.feedback-form__label {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.feedback-form__input {
+    font-family: var(--secondary-font-family);
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--special-greylight);
+    background-color: var(--white);
+    border: 2px solid var(--basic-greylight);
+    border-radius: 2px;
+}
+
+.feedback-form__bottom {
+    background-color: var(--grey);
+}
+
+.feedback-form__submit {
+    border: none;
 }
