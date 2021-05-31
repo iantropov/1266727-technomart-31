@@ -523,3 +523,34 @@ img {
     color: var(--basic-red);
     text-transform: uppercase;
 }
+
+/* pagination */
+
+.pagination {
+    list-style: none;
+    font-family: var(--secondary-font-family);
+}
+
+.pagination__item {
+    border: 1px solid var(--greylight2);
+    text-align: center;
+}
+
+.pagination__item_current {
+    background-color: var(--basic-red);
+    color: var(--white);
+}
+
+.pagination__link {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* about-perforators */
+
+.about-perforators {
+    background-color: var(--basic-background);
+}
