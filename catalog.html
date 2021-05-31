@@ -9,6 +9,13 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -19,7 +26,7 @@
                 <img src="img/logo/thin.svg" width="220" height="47" alt="Логотип Техномарт">
             </a>
             <form class="quick-access__form" action="#" method="get">
-                <input type="search" placeholder="Поиск:">
+                <input class="quick-access__search" type="search" placeholder="Поиск:">
             </form>
             <ul class="quick-access__items">
                 <li class="quick-access__item bookmarks">
@@ -52,8 +59,8 @@
                 </span>
             </p>
             <p class="header-info__header-buttons header-buttons">
-                <a class="header-buttons__signin" href="blank.html">Войти</a>
-                <a class="header-buttons__signup" href="blank.html">Регистрация</a>
+                <a class="header-buttons__button header-buttons__button_signin" href="blank.html">Войти</a>
+                <a class="header-buttons__button header-buttons__button_signup" href="blank.html">Регистрация</a>
             </p>
         </section>
 
@@ -84,21 +91,21 @@
         </nav>
     </header>
 
-    <main class="page-main">
-        <h1 class="page-main__header">Перфораторы</h1>
+    <main class="page-catalog">
+        <h1 class="page-calog__header section-header">Перфораторы</h1>
 
-        <ul class="page-main__breadcrumbs breadcrumbs">
+        <ul class="page-catalog__breadcrumbs breadcrumbs">
             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
             <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_current">Каталог</a></li>
             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Инструмент</a></li>
             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Перфораторы</a></li>
         </ul>
 
-        <section class="page-main__filter filter">
+        <section class="page-catalog__filter filter">
             <h2 class="filter__header">Фильтр:</h2>
             <form class="filter__form" action="#" method="get">
                 <fieldset class="filter__group filter-price">
-                    <legend class="filter-price__header">
+                    <legend class="filter-price__header filter-header">
                         Цена:
                     </legend>
                     <label for="filter-price-range">Диапазон цен</label>
@@ -109,7 +116,7 @@
                     <input class="filter-price__max" id="filter-price-max" type="number" name="price-max" value="30000">
                 </fieldset>
                 <fieldset class="filter__group filter-manufacturers">
-                    <legend class="filter-manufacturers__header">
+                    <legend class="filter-manufacturers__header filter-header">
                         Производители:
                     </legend>
                     <ul class="filter-manufacturers__list">
@@ -146,7 +153,7 @@
                     </ul>
                 </fieldset>
                 <fieldset class="filter__group filter-power">
-                    <legend class="filter-power__header">
+                    <legend class="filter-power__header filter-header">
                         Питание:
                     </legend>
                     <ul class="filter-power__list">
@@ -168,7 +175,7 @@
             </form>
         </section>
 
-        <section class="page-main__sorting sorting">
+        <section class="page-catalog__sorting sorting">
             <h2 class="sorting__header">Сортировка:</h2>
             <ul class="sorting__list">
                 <li class="sorting__list-item sorting__list-item_current">
@@ -189,7 +196,7 @@
             </ul>
         </section>
 
-        <section class="page-main__products products">
+        <section class="page-catalog__products products">
             <h2 class="products__header">Список перфораторов</h2>
             <ul class="products__list product-list">
                 <li class="product-list__product product">
@@ -324,7 +331,7 @@
             </ul>
         </section>
 
-        <section class="page-main__about-perforators about-perforators">
+        <section class="page-catalog__about-perforators about-perforators">
             <h2 class="about-perforators__header">Пара слов о перфораторах</h2>
             <p class="about-perforators__text">
                 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
@@ -358,22 +365,27 @@
 
             <section class="page-footer__links footer-links">
                 <h2 class="footer-links__header">Ссылки</h2>
-                <ul class="footer-links__list">
+                <ul class="footer-links__first-list">
                     <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Компания</a>
                     </li>
                     <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Новости</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="#">Каталог</a>
+                    <li class="footer-links__list-item"><a class="footer-links__link" href="catalog.html">Каталог</a>
                     </li>
                     <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Доставка</a>
                     </li>
                     <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Контакты</a>
                     </li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Материалы</a>
+                </ul>
+                <ul class="footer-links__second-list">
+                    <li class="footer-links__list-item"><a class="footer-links__link footer-links__link_second"
+                            href="blank.html">Материалы</a>
                     </li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Техника</a></li>
-                    <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Инструмент</a>
+                    <li class="footer-links__list-item"><a class="footer-links__link footer-links__link_second"
+                            href="blank.html">Техника</a></li>
+                    <li class="footer-links__list-item"><a class="footer-links__link footer-links__link_second"
+                            href="blank.html">Инструмент</a>
                     </li>
-                    <li class="footer-links__list-item"><a class="footer-links__link"
+                    <li class="footer-links__list-item"><a class="footer-links__link footer-links__link_second"
                             href="blank.html">Спецпредложения</a></li>
                 </ul>
             </section>
@@ -417,18 +429,20 @@
         <h2 class="feedback__header">Форма обратной связи</h2>
         <form class="feedback__form feedback-form" action="#" method="post">
             <p class="feedback-form__name">
-                <label for="feedback-name">Ваше имя:</label>
-                <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+                <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+                <input class="feedback-form__input" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
             <p class="feedback-form__email">
-                <label for="feedback-email">Ваш e-mail:</label>
-                <input id="feedback-email" type="email" name="email" placeholder="email@exchange.com">
+                <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+                <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="email@exchange.com">
             </p>
             <p class="feedback-form__text">
-                <label for="feedback-text">Текст письма:</label>
-                <textarea id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
+                <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+                <textarea class="feedback-form__input" id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="feedback-form__submit" type="submit">Отправить</button>
+            <div class="feedback-form__bottom">
+                <button class="feedback-form__submit button-link" type="submit">Отправить</button>
+            </div>
         </form>
         <button class="feedback__close" type="button">Закрыть</button>
     </section>

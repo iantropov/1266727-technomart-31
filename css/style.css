@@ -22,7 +22,10 @@
     --warning: #ffbf47;
     --error: #ba2732;
     --greylight: #eaeaea;
+    --greylight2: #e5e5e5;
     --grey: #f4f4f4;
+    --beige: #f7f3ec;
+    --custom-grey: #adaaa5;
 
     --primary-font-family: "Cuprum", Arial, sans-serif;
     --secondary-font-family: "PT Sans", Arial, sans-serif;
@@ -424,4 +427,99 @@ img {
 
 .feedback-form__submit {
     border: none;
+}
+
+/* page-catalog */
+
+.page-catalog__header {
+    background-color: var(--basic-background);
+}
+
+/* filter */
+
+.filter {
+    font-family: var(--secondary-font-family);
+}
+
+.filter__header {
+    font-size: 13px;
+    line-height: 18px;
+    background-color: var(--beige);
+}
+
+.filter__submit {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--white);
+    border: 1px solid var(--greylight2);
+}
+
+/* filter-header */
+
+.filter-header {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+/* filter-price */
+
+.filter-price__range,
+.filter-price__min,
+.filter-price__max {
+    background-color: var(--beige);
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    border: none;
+}
+
+/* filter-manufacturers */
+
+.filter-manufacturers__list {
+    list-style: none;
+}
+
+.filter-manufacturers__list-item {
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+/* filter-power */
+
+.filter-power__list {
+    list-style: none;
+}
+
+.filter-power__list-item {
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+/* sorting */
+
+.sorting {
+    font-family: var(--secondary-font-family);
+    font-size: 13px;
+    line-height: 18px;
+    background-color: var(--beige);
+}
+
+.sorting__list {
+    list-style: none;
+}
+
+.sorting__list-item a {
+    color: var(--custom-grey);
+    border-bottom: 1px dotted var(--basic-red);
+    text-transform: uppercase;
+}
+
+.sorting__list-item_current {
+    color: var(--basic-red);
+    text-transform: uppercase;
 }
