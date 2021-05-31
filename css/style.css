@@ -3,6 +3,7 @@
 :root {
     --basic-red: #ee3643;
     --basic-green: #63a63e;
+    --basic-greendark: #518534;
     --basic-grey: #3d546f;
     --basic-greylight: #c5c5c5;
     --basic-background: #f1f5f7;
@@ -24,8 +25,8 @@
     --greylight: #eaeaea;
     --greylight2: #e5e5e5;
     --grey: #f4f4f4;
+    --greendark: #367315;
     --beige: #f7f3ec;
-    --custom-grey: #adaaa5;
 
     --primary-font-family: "Cuprum", Arial, sans-serif;
     --secondary-font-family: "PT Sans", Arial, sans-serif;
@@ -86,6 +87,12 @@ img {
     background-color: var(--basic-green);
 }
 
+/* cart */
+
+.cart_full {
+    background-color: var(--basic-red);
+}
+
 /* header-info */
 
 .header-info__text {
@@ -112,6 +119,26 @@ img {
     line-height: 21px;
     color: var(--black);
     background-color: var(--white);
+}
+
+/* user-info */
+
+.user-info__button {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.user-info__links {
+    list-style: none;
+}
+
+.user-info__link a {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-bluedark);
 }
 
 /* header-nav */
@@ -271,6 +298,42 @@ img {
 .product__price_actual {
     color: var(--white);
     background-color: var(--basic-red);
+}
+
+.product__button {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-bluedark);
+    text-align: center;
+    text-transform: uppercase;
+    border: 3px solid var(--basic-green);
+    border-radius: 2px;
+    background-color: var(--white);
+}
+
+.product__button:hover {
+    border: 3px solid var(--basic-bluedark);
+}
+
+.product__button:active {
+    border: 3px solid var(--basic-bluedark);
+    opacity: 0.5;
+}
+
+.product__button_buy {
+    color: var(--white);
+    background-color: var(--basic-green);
+    border: none;
+    box-shadow: inset 0px -3px 0px var(--greendark);
+}
+
+.product__button_buy:hover {
+    background-color: var(--success);
+}
+
+.product__button_buy:active {
+    background-color: var(--basic-greendark);
+    opacity: 0.5;
 }
 
 /* manufacturers */
@@ -513,15 +576,19 @@ img {
     list-style: none;
 }
 
-.sorting__list-item a {
-    color: var(--custom-grey);
+.sorting__list-item {
     border-bottom: 1px dotted var(--basic-red);
     text-transform: uppercase;
 }
 
+.sorting__list-item a {
+    color: var(--black);
+    opacity: 0.3;
+}
+
 .sorting__list-item_current {
     color: var(--basic-red);
-    text-transform: uppercase;
+    border-bottom: none;
 }
 
 /* pagination */
