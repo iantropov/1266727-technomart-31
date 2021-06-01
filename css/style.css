@@ -71,9 +71,18 @@ img {
     font-size: 18px;
 }
 
+.quick-access__logo path:active {
+    fill: var(--error);
+}
+
 .quick-access__search {
     background-color: inherit;
     border: none;
+}
+
+.quick-access__search:focus {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .quick-access__items {
@@ -84,9 +93,22 @@ img {
     color: var(--white);
 }
 
+.quick-access__item a:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .quick-access__submit {
     color: var(--white);
     background-color: var(--basic-green);
+}
+
+.quick-access__submit:hover {
+    background-color: var(--success);
+}
+
+.quick-access__submit:active {
+    background-color: var(--basic-green);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* cart */
@@ -123,6 +145,14 @@ img {
     background-color: var(--white);
 }
 
+.header-buttons__button:hover {
+    color: var(--basic-red);
+}
+
+.header-buttons__button:active {
+    color: var(--basic-greylight);
+}
+
 /* user-info */
 
 .user-info__button {
@@ -131,6 +161,10 @@ img {
     text-align: center;
     color: var(--black);
     background-color: var(--white);
+}
+
+.user-info__button:active {
+    color: var(--basic-greylight);
 }
 
 .user-info__links {
@@ -143,6 +177,14 @@ img {
     color: var(--basic-bluedark);
 }
 
+.user-info__link a:hover {
+    color: var(--basic-red);
+}
+
+.user-info__link a:active {
+    color: var(--basic-greylight);
+}
+
 /* header-nav */
 
 .header-nav__list {
@@ -152,8 +194,16 @@ img {
     background-color: var(--basic-bluedark);
 }
 
+.header-nav__list-item:hover {
+    background-color: var(--basic-greydark);
+}
+
 .header-nav__list-item a {
     color: var(--white);
+}
+
+.header-nav__list-item a:active {
+    opacity: 0.5;
 }
 
 /* features */
@@ -175,13 +225,21 @@ img {
     color: var(--white);
 }
 
-.feature__text {
+.feature__link {
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
     text-align: center;
     background-color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
+}
+
+.feature__link:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.feature__link:active {
+    background-color: rgba(169, 169, 169, 0.3);
 }
 
 .feature_materials {
