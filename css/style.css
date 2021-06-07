@@ -440,7 +440,7 @@ img {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
+    gap: 20px;
 }
 
 /* product */
@@ -778,8 +778,49 @@ img {
 
 /* page-catalog */
 
+.page-catalog {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    column-gap: 20px;
+}
+
 .page-catalog__header {
     background-color: var(--basic-background);
+    grid-column: 1 / -1;
+}
+
+.page-catalog__breadcrumbs {
+    order: -1;
+    grid-column: 1 / -1;
+}
+
+.page-catalog__filter {
+    grid-row: 3 / 5;
+}
+
+.page-catalog__sorting {
+    margin-bottom: 28px;
+}
+
+.page-catalog__products {
+    margin-bottom: 48px;
+}
+
+.page-catalog__pagination {
+    grid-column: 2 / -1;
+    margin-bottom: 59px;
+}
+
+.page-catalog__about-perforators {
+    grid-column: 1 / -1;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* filter */
@@ -854,6 +895,9 @@ img {
     font-size: 13px;
     line-height: 18px;
     background-color: var(--beige);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .sorting__list {
@@ -885,9 +929,12 @@ img {
 
 /* pagination */
 
-.pagination {
+.pagination__list {
     list-style: none;
     font-family: var(--secondary-font-family);
+
+    margin: 0;
+    padding: 0;
 }
 
 .pagination__item {
