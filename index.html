@@ -58,12 +58,12 @@
                     </div>
                 </form>
                 <ul class="quick-access__items">
-                    <li class="quick-access__item">
+                    <li class="quick-access__item bookmarks">
                         <a class="quick-access__link quick-access__link_bookmark" href="blank.html">
                             Закладки: 0
                         </a>
                     </li>
-                    <li class="quick-access__item">
+                    <li class="quick-access__item cart">
                         <a class="quick-access__link quick-access__link_cart" href="blank.html">
                             Корзина: 0
                         </a>
@@ -195,18 +195,22 @@
                 <h2 class="favorites__header section-header">Популярные товары:</h2>
                 <a class="favorites__link button-link" href="blank.html">все популярные товары</a>
             </div>
-            <ul class="favorites__list product-list">
+            <ul class="favorites__list product-list product-list_grid4">
                 <li class="product-list__product product">
                     <h3 class="product__header">
                         <a class="product__link" href="blank.html">
                             Перфоратор <span class="product__name">bosch<br> bfg 9000</span>
                         </a>
                     </h3>
-                    <p class="product__content">
+                    <p class="product__content product__content_image">
                         <a class="product__link" href="blank.html">
                             <img class="product__image" src="img/bosch-bfg/9000.jpg" width="184" height="164"
                                 alt="Перфоратор с длинным буром">
                         </a>
+                    </p>
+                    <p class="product__content product__content_buttons">
+                        <button class="product__button product__button_buy" type="button">Купить</button>
+                        <button class="product__button" type="button">В закладки</button>
                     </p>
                     <p class="product__prices">
                         <span class="product__price product__price_old">32500 Р.</span>
@@ -219,11 +223,15 @@
                             Перфоратор <span class="product__name">bosch<br>bfg 3000</span>
                         </a>
                     </h3>
-                    <p class="product__content">
+                    <p class="product__content product__content_image">
                         <a class="product__link" href="blank.html">
                             <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
                                 alt="Мощная аккамуляторная дрель">
                         </a>
+                    </p>
+                    <p class="product__content product__content_buttons">
+                        <button class="product__button product__button_buy" type="button">Купить</button>
+                        <button class="product__button" type="button">В закладки</button>
                     </p>
                     <p class="product__prices">
                         <span class="product__price product__price_old">22500 Р.</span>
@@ -236,11 +244,15 @@
                             Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
                         </a>
                     </h3>
-                    <p class="product__content">
+                    <p class="product__content product__content_image">
                         <a class="product__link" href="blank.html">
                             <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
                                 alt="Аккамуляторная ударная дрель">
                         </a>
+                    </p>
+                    <p class="product__content product__content_buttons">
+                        <button class="product__button product__button_buy" type="button">Купить</button>
+                        <button class="product__button" type="button">В закладки</button>
                     </p>
                     <p class="product__prices">
                         <span class="product__price product__price_old">30500 Р.</span>
@@ -253,11 +265,15 @@
                             Перфоратор <span class="product__name">bosch<br>bfg 2000</span>
                         </a>
                     </h3>
-                    <p class="product__content">
+                    <p class="product__content product__content_image">
                         <a class="product__link" href="blank.html">
                             <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
                                 alt="Аккамуляторная дрель">
                         </a>
+                    </p>
+                    <p class="product__content product__content_buttons">
+                        <button class="product__button product__button_buy" type="button">Купить</button>
+                        <button class="product__button" type="button">В закладки</button>
                     </p>
                     <p class="product__prices">
                         <span class="product__price product__price_old">22500 Р.</span>
@@ -393,13 +409,13 @@
                         <img class="footer__logo-image" src="img/logo/thick.svg" width="220" height="68"
                             alt="Логотип Техномарт">
                     </a>
-                    
+
                     <p class="footer__address">
                         г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
                         +7 800 555-86-28
                     </p>
                 </div>
-                
+
                 <div class="footer__container_second">
                     <ul class="footer__links footer__links_first footer-links footer-links_first">
                         <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Компания</a>
@@ -439,9 +455,12 @@
                 </p>
 
                 <ul class="footer__social social">
-                    <li class="social__item"><a class="social__link social__link_vk" href="#" aria-label="Вконтакте"></a></li>
-                    <li class="social__item"><a class="social__link social__link_fb" href="#" aria-label="Фейсбук"></a></li>
-                    <li class="social__item"><a class="social__link social__link_inst" href="#" aria-label="Инстаграм"></a></li>
+                    <li class="social__item"><a class="social__link social__link_vk" href="#"
+                            aria-label="Вконтакте"></a></li>
+                    <li class="social__item"><a class="social__link social__link_fb" href="#" aria-label="Фейсбук"></a>
+                    </li>
+                    <li class="social__item"><a class="social__link social__link_inst" href="#"
+                            aria-label="Инстаграм"></a></li>
                 </ul>
                 <ul class="footer__additionals additionals">
                     <li class="additionals__item additionals__item_feedback">
@@ -449,7 +468,7 @@
                         <a class="additionals__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                     </li>
                     <li class="additionals__item additionals__item_develop">
-                        Разработано — 
+                        Разработано —
                         <a class="additionals__link" href="https://htmlacademy.ru">htmlacademy.ru</a>
                     </li>
                 </ul>
@@ -457,36 +476,52 @@
         </div>
     </footer>
 
-    <section class="feedback">
+    <section class="feedback modal visually-hidden">
         <h2 class="feedback__header visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form feedback-form" action="#" method="post">
-            <p class="feedback-form__name">
-                <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
-                <input class="feedback-form__input" id="feedback-name" type="text" name="name"
-                    placeholder="Имя Фамилия">
-            </p>
-            <p class="feedback-form__email">
-                <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
-                <input class="feedback-form__input" id="feedback-email" type="email" name="email"
-                    placeholder="email@exchange.com">
-            </p>
-            <p class="feedback-form__text">
-                <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
-                <textarea class="feedback-form__input" id="feedback-text" name="text"
-                    placeholder="В свободной форме"></textarea>
-            </p>
+            <div class="feedback-form__top">
+                <p class="feedback-form__name">
+                    <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+                    <input class="feedback-form__input" id="feedback-name" type="text" name="name"
+                        placeholder="Имя Фамилия">
+                </p>
+                <p class="feedback-form__email">
+                    <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+                    <input class="feedback-form__input" id="feedback-email" type="email" name="email"
+                        placeholder="email@exchange.com">
+                </p>
+                <p class="feedback-form__text">
+                    <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+                    <textarea class="feedback-form__input feedback-form__input_text" id="feedback-text" name="text"
+                        placeholder="В свободной форме"></textarea>
+                </p>
+            </div>
             <div class="feedback-form__bottom">
                 <button class="feedback-form__submit button-link" type="submit">Отправить</button>
             </div>
         </form>
-        <button class="feedback__close" type="button">Закрыть</button>
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </section>
 
-    <section class="map">
-        <h2 class="map__header">Карта</h2>
-        <!-- Карта -->
-        <button class="map__close" type="button">Закрыть</button>
+    <section class="map modal visually-hidden">
+        <h2 class="map__header visually-hidden">Карта</h2>
+        <img width="942" height="443" src="img/map-large.jpg" alt="Карта с расположением магазина">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </section>
+    
+    <section class="add-to-cart modal">
+        <h2 class="add-to-cart__header visually-hidden">Успешное добавление в корзину</h2>
+        <div class="add-to-cart__top">
+            <p class="add-to-cart__text">
+                Товар добавлен в корзину!
+            </p>
+        </div>
+        <div class="add-to-cart__bottom">
+            <button class="add-to-cart__button add-to-cart__button_purchase button-link" type="button">Оформить заказ</button>
+            <button class="add-to-cart__button add-to-cart__button_continue button-link" type="button">Продолжить покупки</button>
+        </div>
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </section>    
 </body>
 
 </html>
