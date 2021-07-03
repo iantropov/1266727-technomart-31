@@ -1892,6 +1892,15 @@ img {
     background-image: url("../img/icons/checkbox-on-hover.svg");
 }
 
+.filter-manufacturer__input:disabled + label::before {
+    background-image: url("../img/icons/checkbox-off-disabled.svg");
+}
+
+.filter-manufacturer__input:checked:disabled + label::before {
+    background-image: url("../img/icons/checkbox-on-disabled.svg");
+}
+
+
 /* filter-powers */
 
 .filter-powers {
@@ -1943,6 +1952,14 @@ img {
 
 .filter-power__input:checked:hover + label::before {
     background-image: url("../img/icons/radio-on-hover.svg");
+}
+
+.filter-power__input:disabled + label::before {
+    background-image: url("../img/icons/radio-off-disabled.svg");
+}
+
+.filter-power__input:checked:disabled + label::before {
+    background-image: url("../img/icons/radio-on-disabled.svg");
 }
 
 /* sorting */
