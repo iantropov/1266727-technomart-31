@@ -1307,6 +1307,11 @@ img {
     width: 350px;
 }
 
+.footer__phone {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .footer__copyright {
     margin-right: 150px;
 }
