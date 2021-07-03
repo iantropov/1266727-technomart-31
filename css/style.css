@@ -1178,9 +1178,31 @@ img {
 }
 
 .services-tabs-content_delivery {
-    background-image: url("../img/services/car.png");
+    background-image: url("../img/services/delivery.png");
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+
+.services-tabs-content_guarantee {
+    background-image: url("../img/services/guarantee.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.services-tabs-content_credit {
+    background-image: url("../img/services/credit.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.services-tabs-content__text {
+    margin-bottom: 27px;
+}
+
+.services-tabs-content__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 195px;
 }
 
 /* about-contacts */
