@@ -482,7 +482,7 @@
             </section>
 
             <section class="page-catalog__pagination pagination">
-                <h2 class="products__header visually-hidden">Пагинация</h2>
+                <h2 class="pagination__header visually-hidden">Пагинация</h2>
 
                 <ul class="pagination__list">
                     <li class="pagination__item pagination__item_current"><a class="pagination__link">1</a></li>
@@ -508,7 +508,7 @@
     <footer class="page__footer footer">
         <div class="footer__top">
             <div class="footer__container center-container">
-                <div class="footer__container_first">
+                <div class="footer__container-first">
                     <a class="footer__logo-link">
                         <img class="footer__logo-image" src="img/logo/thick.svg" width="220" height="68"
                             alt="Логотип Техномарт">
@@ -520,7 +520,7 @@
                     </p>
                 </div>
 
-                <div class="footer__container_second">
+                <div class="footer__container-second">
                     <ul class="footer__links footer__links_first footer-links footer-links_first">
                         <li class="footer-links__list-item"><a class="footer-links__link" href="blank.html">Компания</a>
                         </li>
@@ -552,7 +552,7 @@
         </div>
 
         <div class="footer__bottom">
-            <div class="center-container footer__container_third">
+            <div class="center-container footer__container-third">
                 <p class="footer__copyright copyright">
                     © 2010–2021 Компания «Техномарт»<br>
                     Все права защищены
@@ -580,36 +580,52 @@
         </div>
     </footer>
 
-    <section class="feedback visually-hidden">
-        <h2 class="feedback__header">Форма обратной связи</h2>
+    <section class="feedback modal visually-hidden">
+        <h2 class="feedback__header visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form feedback-form" action="#" method="post">
-            <p class="feedback-form__name">
-                <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
-                <input class="feedback-form__input" id="feedback-name" type="text" name="name"
-                    placeholder="Имя Фамилия">
-            </p>
-            <p class="feedback-form__email">
-                <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
-                <input class="feedback-form__input" id="feedback-email" type="email" name="email"
-                    placeholder="email@exchange.com">
-            </p>
-            <p class="feedback-form__text">
-                <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
-                <textarea class="feedback-form__input" id="feedback-text" name="text"
-                    placeholder="В свободной форме"></textarea>
-            </p>
+            <div class="feedback-form__top">
+                <p class="feedback-form__name">
+                    <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+                    <input class="feedback-form__input" id="feedback-name" type="text" name="name"
+                        placeholder="Имя Фамилия">
+                </p>
+                <p class="feedback-form__email">
+                    <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+                    <input class="feedback-form__input" id="feedback-email" type="email" name="email"
+                        placeholder="email@exchange.com">
+                </p>
+                <p class="feedback-form__text">
+                    <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+                    <textarea class="feedback-form__input feedback-form__input_text" id="feedback-text" name="text"
+                        placeholder="В свободной форме"></textarea>
+                </p>
+            </div>
             <div class="feedback-form__bottom">
                 <button class="feedback-form__submit button-link" type="submit">Отправить</button>
             </div>
         </form>
-        <button class="feedback__close" type="button">Закрыть</button>
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </section>
 
-    <section class="map visually-hidden">
-        <h2 class="map__header">Карта</h2>
-        <!-- Карта -->
-        <button class="map__close" type="button">Закрыть</button>
+    <section class="map modal visually-hidden">
+        <h2 class="map__header visually-hidden">Карта</h2>
+        <img width="942" height="443" src="img/map-large.jpg" alt="Карта с расположением магазина">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </section>
+    
+    <section class="add-to-cart modal visually-hidden">
+        <h2 class="add-to-cart__header visually-hidden">Успешное добавление в корзину</h2>
+        <div class="add-to-cart__top">
+            <p class="add-to-cart__text">
+                Товар добавлен в корзину!
+            </p>
+        </div>
+        <div class="add-to-cart__bottom">
+            <button class="add-to-cart__button add-to-cart__button_purchase button-link" type="button">Оформить заказ</button>
+            <button class="add-to-cart__button add-to-cart__button_continue button-link" type="button">Продолжить покупки</button>
+        </div>
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </section>    
 </body>
 
 </html>

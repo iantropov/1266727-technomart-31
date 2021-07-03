@@ -1228,17 +1228,17 @@ img {
     justify-content: space-between;
 }
 
-.footer__container_first {
+.footer__container-first {
     display: flex;
     flex-direction: column;
 }
 
-.footer__container_second {
+.footer__container-second {
     display: flex;
     flex-direction: column;
 }
 
-.footer__container_third {
+.footer__container-third {
     display: flex;
     justify-content: space-between;
 }
