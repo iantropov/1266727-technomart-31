@@ -994,7 +994,6 @@ img {
 
 .product__price_old {
     color: var(--special-greylight);
-    text-decoration: line-through;
     margin-bottom: 13px;
 }
 
