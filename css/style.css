@@ -2156,3 +2156,9 @@ img {
 .add-to-cart__button_continue:active {
     outline: 1px solid var(--basic-reddark);
 }
+
+/* page-blank */
+
+.page-blank__header {
+    background-color: var(--basic-background);
+}
