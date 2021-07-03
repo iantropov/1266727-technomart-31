@@ -732,7 +732,7 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5px;
-}    
+}
 
 .slider__text {
     font-size: 18px;
@@ -836,10 +836,10 @@ img {
 
     margin: 0;
     padding: 0;
-    
+
     display: grid;
     column-gap: 20px;
-    row-gap: 18px;    
+    row-gap: 18px;
 }
 
 .product-list_grid3 {
@@ -1418,8 +1418,8 @@ img {
     height: 430px;
     background-color: var(--white);
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-    border-top: 7px solid var(--basic-red); 
-    box-sizing: border-box;   
+    border-top: 7px solid var(--basic-red);
+    box-sizing: border-box;
 }
 
 .modal__close {
@@ -1429,7 +1429,7 @@ img {
     right: 11px;
     width: 21px;
     height: 21px;
-    background-image: url('../img/icons/close.svg');
+    background-image: url("../img/icons/close.svg");
     background-color: transparent;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -1621,7 +1621,7 @@ img {
 .filter__group {
     border: none;
     border-bottom: 1px solid var(--greylight);
-    
+
     margin: 0;
     padding: 0;
 }
@@ -1761,7 +1761,7 @@ img {
 
 .filter-manufacturers__list-item {
     font-size: 15px;
-    line-height: 19px;    
+    line-height: 19px;
     margin-bottom: 16px;
 }
 
@@ -1774,7 +1774,7 @@ img {
 .filter-manufacturer__input + label {
     padding-left: 35px;
     font-size: inherit;
-    line-height: inherit;    
+    line-height: inherit;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
@@ -1787,21 +1787,21 @@ img {
     top: -2px;
     width: 23px;
     height: 23px;
-    background-image: url('../img/icons/checkbox-off.svg');
+    background-image: url("../img/icons/checkbox-off.svg");
 }
 
 .filter-manufacturer__input:hover + label::before {
-    background-image: url('../img/icons/checkbox-off-hover.svg');
+    background-image: url("../img/icons/checkbox-off-hover.svg");
 }
 
 .filter-manufacturer__input:checked + label::before {
     width: 27px;
-    background-image: url('../img/icons/checkbox-on.svg');
+    background-image: url("../img/icons/checkbox-on.svg");
 }
 
 .filter-manufacturer__input:checked:hover + label::before {
-    background-image: url('../img/icons/checkbox-on-hover.svg');
-} 
+    background-image: url("../img/icons/checkbox-on-hover.svg");
+}
 
 /* filter-powers */
 
@@ -1828,7 +1828,7 @@ img {
 .filter-power__input + label {
     padding-left: 35px;
     font-size: 15px;
-    line-height: 19px;    
+    line-height: 19px;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
@@ -1841,20 +1841,20 @@ img {
     top: -3px;
     width: 25px;
     height: 25px;
-    background-image: url('../img/icons/radio-off.svg');
+    background-image: url("../img/icons/radio-off.svg");
 }
 
 .filter-power__input:hover + label::before {
-    background-image: url('../img/icons/radio-off-hover.svg');
+    background-image: url("../img/icons/radio-off-hover.svg");
 }
 
 .filter-power__input:checked + label::before {
-    background-image: url('../img/icons/radio-on.svg');
+    background-image: url("../img/icons/radio-on.svg");
 }
 
 .filter-power__input:checked:hover + label::before {
-    background-image: url('../img/icons/radio-on-hover.svg');
-} 
+    background-image: url("../img/icons/radio-on-hover.svg");
+}
 
 /* sorting */
 
@@ -1906,7 +1906,7 @@ img {
     margin-right: 21px;
     border: none;
 }
- 
+
 .sorting__list-item_dir:last-child {
     margin-right: 0;
 }
@@ -1967,7 +1967,7 @@ img {
 
     margin: 0;
     padding: 0;
-    
+
     display: flex;
 }
 
@@ -2047,7 +2047,7 @@ img {
 .add-to-cart__text {
     padding: 0;
     margin: 0;
-    
+
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -2056,7 +2056,7 @@ img {
     height: 66px;
     box-sizing: border-box;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
 .add-to-cart__text::before {
@@ -2068,7 +2068,7 @@ img {
     left: 0px;
     background-image: url("../img/icons/mark.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;    
+    background-position: 0 0;
 }
 
 .add-to-cart__bottom {
