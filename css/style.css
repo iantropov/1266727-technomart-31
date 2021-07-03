@@ -712,13 +712,6 @@ img {
     position: relative;
 }
 
-.slider__header {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .slider__container {
     margin: 0;
     padding: 0;
@@ -729,7 +722,17 @@ img {
     position: absolute;
     top: 23px;
     left: 24px;
+    display: flex;
+    flex-direction: column;
 }
+
+.slider__header {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}    
 
 .slider__text {
     font-size: 18px;
@@ -1876,9 +1879,6 @@ img {
 }
 
 .sorting__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
