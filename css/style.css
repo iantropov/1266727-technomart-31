@@ -776,31 +776,6 @@ img {
     position: absolute;
 }
 
-.slider__text-container {
-    position: absolute;
-    top: 23px;
-    left: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.slider__header {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
-.slider__text {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.slider__image_second {
-    display: none;
-}
-
 .slider__link {
     position: absolute;
     left: 24px;
@@ -861,6 +836,29 @@ img {
 
 .slider__control_current {
     background-color: var(--basic-red);
+}
+
+/* slide */
+
+.slide__caption {
+    position: absolute;
+    top: 23px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide__header {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.slide__text {
+    font-size: 18px;
+    line-height: 24px;
 }
 
 /* button-link */
