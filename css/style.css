@@ -374,7 +374,7 @@ a {
 /* header-info */
 
 .header-info {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .header-info__container {
@@ -611,7 +611,7 @@ a {
     line-height: 24px;
     background-color: var(--basic-bluedark);
     margin-bottom: 59px;
-    padding: 0 20px;
+    padding: 0 27px;
     box-sizing: border-box;
 }
 
@@ -632,7 +632,7 @@ a {
 
 .header-nav__list-link {
     color: var(--white);
-    padding: 18px 27px 18px 27px;
+    padding: 17px 27px 19px 27px;
     display: inline-block;
     vertical-align: top;
 }
@@ -850,7 +850,7 @@ a {
 
 .slider__controls {
     position: absolute;
-    bottom: 30px;
+    bottom: 36px;
     right: 295px;
     display: flex;
     width: 30px;
