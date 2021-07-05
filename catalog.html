@@ -251,259 +251,244 @@
                 </form>
             </section>
 
-            <section class="page-catalog__sorting sorting">
-                <h2 class="sorting__header">Сортировка:</h2>
-                <div class="sorting__list">
-                    <div class="sorting__list-group sorting__list-group_first">
-                        <div class="sorting__list-item sorting__list-item_price sorting__list-item_current">
-                            <a href="blank.html">По цене</a>
+            <div class="page-catalog__column">
+                <section class="page-catalog__sorting sorting">
+                    <h2 class="sorting__header">Сортировка:</h2>
+                    <div class="sorting__list">
+                        <div class="sorting__list-group sorting__list-group_first">
+                            <div class="sorting__list-item sorting__list-item_price sorting__list-item_current">
+                                <a href="blank.html">По цене</a>
+                            </div>
+                            <div class="sorting__list-item">
+                                <a href="blank.html">По типу</a>
+                            </div>
                         </div>
-                        <div class="sorting__list-item">
-                            <a href="blank.html">По типу</a>
+                        <div class="sorting__list-group sorting__list-group_second">
+                            <div class="sorting__list-item sorting__list-item_functionality">
+                                <a href="blank.html">По функционалу</a>
+                            </div>
+                            <div
+                                class="sorting__list-item sorting__list-item_dir sorting__list-item_current sorting-dir">
+                                <a class="sorting-dir__link" href="blank.html" aria-label="По возрастанию">
+                                    <svg class="sorting-dir__icon" width="12" height="10" viewBox="0 0 12 10"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="sorting-dir__path" d="M5.66241 0L11.1624 10L0.162415 10" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="sorting__list-item sorting__list-item_dir sorting-dir">
+                                <a class="sorting-dir__link" href="blank.html" aria-label="По убыванию">
+                                    <svg class="sorting-dir__icon" width="12" height="10" viewBox="0 0 12 10"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="sorting-dir__path" d="M5.66241 10L0.162415 0H11.1624" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="sorting__list-group sorting__list-group_second">
-                        <div class="sorting__list-item sorting__list-item_functionality">
-                            <a href="blank.html">По функционалу</a>
-                        </div>
-                        <div class="sorting__list-item sorting__list-item_dir sorting__list-item_current sorting-dir">
-                            <a class="sorting-dir__link" href="blank.html" aria-label="По возрастанию">
-                                <svg class="sorting-dir__icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="sorting-dir__path" d="M5.66241 0L11.1624 10L0.162415 10" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="sorting__list-item sorting__list-item_dir sorting-dir">
-                            <a class="sorting-dir__link" href="blank.html" aria-label="По убыванию">
-                                <svg class="sorting-dir__icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="sorting-dir__path" d="M5.66241 10L0.162415 0H11.1624" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                </section>
+
+                <section class="page-catalog__products products">
+                    <h2 class="products__header visually-hidden">Список перфораторов</h2>
+                    <ul class="products__list product-list product-list_grid3">
+                        <li class="product-list__product product">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
+                                    alt="Аккамуляторная ударная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">30500 Р.</s>
+                                <span class="product__price product__price_actual">25500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
+                                    alt="Аккамуляторная ударная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">30500 Р.</s>
+                                <span class="product__price product__price_actual">25500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product new">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
+                                    alt="Аккамуляторная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">30500 Р.</s>
+                                <span class="product__price product__price_actual">25500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product new">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 3000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
+                                    alt="Мощная аккамуляторная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">22500 Р.</s>
+                                <span class="product__price product__price_actual">15500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
+                                    alt="Аккамуляторная ударная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">30500 Р.</s>
+                                <span class="product__price product__price_actual">25500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product new">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 2000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
+                                    alt="Аккамуляторная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices product__prices_single-price">
+                                <span class="product__price product__price_actual">15500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product new">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 3000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
+                                    alt="Мощная аккамуляторная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">22500 Р.</s>
+                                <span class="product__price product__price_actual">15500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
+                                    alt="Аккамуляторная ударная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices">
+                                <s class="product__price product__price_old">30500 Р.</s>
+                                <span class="product__price product__price_actual">25500 Р.</span>
+                            </p>
+                        </li>
+                        <li class="product-list__product product new">
+                            <h3 class="product__header">
+                                <a class="product__link" href="blank.html">
+                                    Перфоратор <span class="product__name">bosch<br>bfg 2000</span>
+                                </a>
+                            </h3>
+                            <p class="product__content product__content_image">
+                                <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
+                                    alt="Аккамуляторная дрель">
+                            </p>
+                            <p class="product__content product__content_buttons">
+                                <button class="product__button product__button_buy" type="button">Купить</button>
+                                <button class="product__button" type="button">В закладки</button>
+                            </p>
+                            <p class="product__prices product__prices_single-price">
+                                <span class=" product__price product__price_actual">15500 Р.</span>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="page-catalog__pagination pagination">
+                    <h2 class="pagination__header visually-hidden">Пагинация</h2>
+
+                    <ul class="pagination__list">
+                        <li class="pagination__item pagination__item_current"><a class="pagination__link">1</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="blank.html">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="blank.html">3</a></li>
+                        <li class="pagination__item"><a class="pagination__link pagination__link_next"
+                                href="blank.html">Следующая</a></li>
+                    </ul>
+                </section>
+            </div>
+            <section class="page-catalog__about-perforators about-perforators">
+                <div class="center-container about-perforators__container">
+                    <h2 class="about-perforators__header section-header">Пара слов о перфораторах</h2>
+                    <p class="about-perforators__text section-text">
+                        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
+                        отверстий
+                        в кирпиче, бетоне и камне.<br>
+                        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+                        функции дрели, шуруповерта и отбойного молотка.<br>
+                        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
+                        молоток и ударная дрель.
+                    </p>
                 </div>
             </section>
-
-            <section class="page-catalog__products products">
-                <h2 class="products__header visually-hidden">Список перфораторов</h2>
-                <ul class="products__list product-list product-list_grid3">
-                    <li class="product-list__product product">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
-                                    alt="Аккамуляторная ударная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">30500 Р.</s>
-                            <span class="product__price product__price_actual">25500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
-                                    alt="Аккамуляторная ударная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">30500 Р.</s>
-                            <span class="product__price product__price_actual">25500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product new">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
-                                    alt="Аккамуляторная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">30500 Р.</s>
-                            <span class="product__price product__price_actual">25500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product new">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 3000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
-                                    alt="Мощная аккамуляторная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">22500 Р.</s>
-                            <span class="product__price product__price_actual">15500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
-                                    alt="Аккамуляторная ударная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">30500 Р.</s>
-                            <span class="product__price product__price_actual">25500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product new">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 2000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
-                                    alt="Аккамуляторная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices product__prices_single-price">
-                            <span class="product__price product__price_actual">15500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product new">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 3000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/3000.jpg" width="127" height="112"
-                                    alt="Мощная аккамуляторная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">22500 Р.</s>
-                            <span class="product__price product__price_actual">15500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 6000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/6000.jpg" width="144" height="128"
-                                    alt="Аккамуляторная ударная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices">
-                            <s class="product__price product__price_old">30500 Р.</s>
-                            <span class="product__price product__price_actual">25500 Р.</span>
-                        </p>
-                    </li>
-                    <li class="product-list__product product new">
-                        <h3 class="product__header">
-                            <a class="product__link" href="blank.html">
-                                Перфоратор <span class="product__name">bosch<br>bfg 2000</span>
-                            </a>
-                        </h3>
-                        <p class="product__content product__content_image">
-                            <a class="product__link" href="blank.html">
-                                <img class="product__image" src="img/bosch-bfg/2000.jpg" width="127" height="112"
-                                    alt="Аккамуляторная дрель">
-                            </a>
-                        </p>
-                        <p class="product__content product__content_buttons">
-                            <button class="product__button product__button_buy" type="button">Купить</button>
-                            <button class="product__button" type="button">В закладки</button>
-                        </p>
-                        <p class="product__prices product__prices_single-price">
-                            <span class=" product__price product__price_actual">15500 Р.</span>
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="page-catalog__pagination pagination">
-                <h2 class="pagination__header visually-hidden">Пагинация</h2>
-
-                <ul class="pagination__list">
-                    <li class="pagination__item pagination__item_current"><a class="pagination__link">1</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="blank.html">2</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="blank.html">3</a></li>
-                    <li class="pagination__item"><a class="pagination__link pagination__link_next"
-                            href="blank.html">Следующая</a></li>
-                </ul>
-            </section>
-        </div>
-        <section class="page-catalog__about-perforators about-perforators">
-            <div class="center-container about-perforators__container">
-                <h2 class="about-perforators__header section-header">Пара слов о перфораторах</h2>
-                <p class="about-perforators__text section-text">
-                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
-                    в кирпиче, бетоне и камне.<br>
-                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
-                    функции дрели, шуруповерта и отбойного молотка.<br>
-                    В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
-                    молоток и ударная дрель.
-                </p>
-            </div>
-        </section>
     </main>
 
     <footer class="page__footer footer">
