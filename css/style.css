@@ -596,10 +596,14 @@ a {
     text-align: center;
 }
 
+.user-info__link_left {
+    position: relative;
+    margin-right: 20px;
+}
+
 .user-info__link_left::after {
+    position: absolute;
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     background-color: var(--basic-bluedark);
     border-radius: 50%;
     width: 4px;
