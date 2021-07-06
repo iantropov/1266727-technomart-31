@@ -45,7 +45,8 @@
                 <form class="quick-access__form" action="#" method="get">
                     <div class="quick-access__search search">
                         <label for="quick-search" aria-label="Быстрый поиск"></label>
-                        <input id="quick-search" name="quick-search" class="search__input" type="text" placeholder="Поиск:">
+                        <input id="quick-search" name="quick-search" class="search__input" type="text"
+                            placeholder="Поиск:">
                         <svg class="search__icon" width="17" height="17" viewBox="0 0 17 17"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -96,7 +97,8 @@
                         </svg>
                         Войти
                     </a>
-                    <a class="header-buttons__button header-buttons__button_signup" href="blank.html">Регистрация</a>
+                    <a class="header-buttons__button header-buttons__button_signup signup"
+                        href="blank.html">Регистрация</a>
                 </p>
             </div>
         </section>
@@ -130,7 +132,8 @@
 
     <main class="page__blank page-blank">
         <div class="page-blank__container center-container">
-            <h1 class="page-blank__header section-header section-header-container">Пустая страница</h1>
+            <h1 class="page-blank__header section-header section-header-container section-header-container_secondary">
+                Пустая страница</h1>
         </div>
     </main>
 
@@ -243,7 +246,7 @@
         <img width="942" height="443" src="img/map-large.jpg" alt="Карта с расположением магазина">
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </section>
-    
+
     <section class="add-to-cart modal hidden">
         <h2 class="add-to-cart__header visually-hidden">Успешное добавление в корзину</h2>
         <div class="add-to-cart__top">
@@ -252,11 +255,13 @@
             </p>
         </div>
         <div class="add-to-cart__bottom">
-            <button class="add-to-cart__button add-to-cart__button_purchase button-link" type="button">Оформить заказ</button>
-            <button class="add-to-cart__button add-to-cart__button_continue button-link" type="button">Продолжить покупки</button>
+            <button class="add-to-cart__button add-to-cart__button_purchase button-link" type="button">Оформить
+                заказ</button>
+            <button class="add-to-cart__button add-to-cart__button_continue button-link" type="button">Продолжить
+                покупки</button>
         </div>
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
-    </section>    
+    </section>
 </body>
 
 </html>
