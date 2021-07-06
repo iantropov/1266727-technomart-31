@@ -954,7 +954,8 @@ a {
     box-sizing: border-box;
 }
 
-.product:hover {
+.product:hover,
+.product:focus {
     filter: drop-shadow(0px 4px 20px var(--black-with-opacity2));
 }
 
@@ -997,11 +998,15 @@ a {
     display: none;
 }
 
-.product:hover .product__content_image {
+.product:hover .product__content_image,
+.product:focus .product__content_image,
+.product:focus-within .product__content_image {
     display: none;
 }
 
-.product:hover .product__content_buttons {
+.product:hover .product__content_buttons,
+.product:focus .product__content_buttons,
+.product:focus-within .product__content_buttons {
     display: flex;
 }
 
