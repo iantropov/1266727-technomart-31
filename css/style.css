@@ -525,54 +525,56 @@ a {
     margin-left: 51px;
 }
 
-.user-info__button {
-    display: inline-block;
-    vertical-align: top;
+.user-info__panel {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
     color: var(--black);
     background-color: var(--white);
-    grid-column: 1 / -1;
-    padding: 12px 56px 24px;
+    padding: 12px 0 24px;
     position: relative;
     height: 45px;
     box-sizing: border-box;
     margin-bottom: 7px;
     width: 299px;
+    display: flex;
 }
 
-.user-info__button:active {
+.user-info__profile-link {
+    height: 18px;
+    padding: 5px;
+}
+
+.user-info__profile-link:active {
     color: var(--basic-greylight);
 }
 
-.user-info__icon {
-    position: absolute;
+.user-info__logout-link {
+    height: 18px;
+    padding: 5px;
 }
 
-.user-info__icon_left {
+.user-info__profile-icon {
     width: 20px;
     height: 18px;
-    top: 13px;
-    left: 15px;
 }
 
-.user-info__icon_right {
+.user-info__logout-icon {
     width: 20px;
     height: 18px;
-    top: 12px;
-    right: 17px;
 }
 
 .user-info__path {
     fill: var(--basic-greylight);
 }
 
-.user-info:hover .user-info__path {
+.user-info__profile-link:hover .user-info__path,
+.user-info__logout-link:hover .user-info__path {
     fill: var(--basic-grey);
 }
 
-.user-info:active .user-info__path {
+.user-info__profile-link:active .user-info__path,
+.user-info__logout-link:active .user-info__path {
     fill: var(--basic-greylight);
 }
 
