@@ -960,7 +960,7 @@ a {
     justify-content: flex-end;
     width: 220px;
     min-height: 318px;
-    padding: 0px 18px 21px;
+    padding: 0px 18px 19px;
     box-sizing: border-box;
 }
 
@@ -1054,6 +1054,7 @@ a {
     position: relative;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    margin-left: -7px;
 }
 
 .product__price_actual::after {
