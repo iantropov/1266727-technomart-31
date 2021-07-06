@@ -1927,6 +1927,11 @@ a {
     background-image: url("../img/icons/checkbox-off.svg");
 }
 
+.filter-manufacturer__input:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-manufacturer__input:hover + label::before {
     background-image: url("../img/icons/checkbox-off-hover.svg");
 }
@@ -1987,6 +1992,11 @@ a {
     width: 25px;
     height: 25px;
     background-image: url("../img/icons/radio-off.svg");
+}
+
+.filter-power__input:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-power__input:hover + label::before {
