@@ -576,12 +576,6 @@ a {
     fill: var(--basic-greylight);
 }
 
-.user-info__links-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .user-info__link {
     font-size: 16px;
     line-height: 18px;
@@ -596,15 +590,14 @@ a {
     color: var(--basic-greylight);
 }
 
-.user-info__link_left {
-    text-align: right;
+.user-info__links-container {
+    text-align: center;
 }
 
-.user-info__link_right {
-    text-align: left;
-}
-
-.user-info__separator {
+.user-info__link_left::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
     background-color: var(--basic-bluedark);
     border-radius: 50%;
     width: 4px;
