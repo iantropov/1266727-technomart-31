@@ -1015,10 +1015,6 @@ a {
     display: flex;
 }
 
-.product__name {
-    text-transform: uppercase;
-}
-
 .product__prices {
     display: flex;
     flex-flow: column nowrap;
