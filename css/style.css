@@ -1289,6 +1289,18 @@ a {
     margin-bottom: 27px;
 }
 
+.services-tabs-content_delivery .services-tabs-content__text {
+    width: 274px;
+}
+
+.services-tabs-content_guarantee .services-tabs-content__text {
+    width: 311px;
+}
+
+.services-tabs-content_credit .services-tabs-content__text {
+    width: 278px;
+}
+
 .services-tabs-content__link {
     display: inline-block;
     vertical-align: top;
