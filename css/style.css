@@ -1060,6 +1060,7 @@ a {
 }
 
 .product__button {
+    font-family: var(--primary-font-family);
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-bluedark);
@@ -1089,6 +1090,20 @@ a {
     box-shadow: inset 0px -3px 0px var(--greendark);
     padding: 10px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.product__button_buy::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 17px;
+    background-image: url("../img/icons/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
 }
 
 .product__button_buy:hover {
@@ -1627,6 +1642,7 @@ a {
 
 .feedback-form__input_text {
     height: 114px;
+    resize: none;
 }
 
 .feedback-form__text {
