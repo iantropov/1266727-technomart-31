@@ -1261,8 +1261,8 @@ a {
     color: inherit;
 }
 
-.services-tabs-list__item_active,
-.services-tabs-list__item_active:hover {
+.services-tabs-list__item_current,
+.services-tabs-list__item_current:hover {
     background-color: var(--white);
     color: var(--basic-bluedark);
 }
@@ -1273,10 +1273,11 @@ a {
     width: 619px;
     min-height: 283px;
     padding-top: 47px;
+    display: none;
 }
 
-.services-tabs-content__header {
-    margin-bottom: 30px;
+.services-tabs-content_current {
+    display: block;
 }
 
 .services-tabs-content_delivery {
@@ -1295,6 +1296,10 @@ a {
     background-image: url("../img/services/credit.png");
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+
+.services-tabs-content__header {
+    margin-bottom: 30px;
 }
 
 .services-tabs-content__text {
