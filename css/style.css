@@ -889,6 +889,14 @@ a {
 
 /* slide */
 
+.slide {
+    display: none;
+}
+
+.slide_current {
+    display: block;
+}
+
 .slide__caption {
     position: absolute;
     top: 0;
