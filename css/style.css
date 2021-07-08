@@ -852,6 +852,10 @@ a {
     cursor: pointer;
 }
 
+.slider__button:focus::before {
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
 .slider__button_prev {
     left: 24px;
 }
@@ -1998,7 +2002,6 @@ a {
 }
 
 .filter-manufacturer__input:focus + label::before {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -2065,7 +2068,6 @@ a {
 }
 
 .filter-power__input:focus + label::before {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
 
