@@ -1387,9 +1387,7 @@ a {
     height: 158px;
 }
 
-.contacts__link {
-    display: inline-block;
-    vertical-align: top;
+.contacts__button {
     width: 300px;
 }
 
@@ -1708,6 +1706,13 @@ a {
     margin-left: -471px;
     width: 942px;
     min-height: 449px;
+}
+
+.map__image,
+.map__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* page-catalog */
