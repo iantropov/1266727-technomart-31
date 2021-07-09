@@ -674,7 +674,7 @@ a {
     font-size: 18px;
     line-height: 24px;
     background-color: var(--basic-bluedark);
-    margin-bottom: 59px;
+    margin-bottom: 61px;
     padding: 0 27px;
     box-sizing: border-box;
 }
@@ -1460,7 +1460,7 @@ a {
 
 .footer__bottom {
     background-color: var(--basic-greydark);
-    padding: 36px 0px 29px;
+    padding: 35px 0px 29px;
 }
 
 .footer__container {
@@ -1496,6 +1496,8 @@ a {
     width: 350px;
     padding: 0;
     margin: 0;
+    padding-left: 4px;
+    padding-top: 2px;
 }
 
 .footer__phone {
@@ -1519,12 +1521,13 @@ a {
 }
 
 .footer-links_first {
-    padding-top: 37px;
+    padding-top: 39px;
+    padding-left: 1px;
 }
 
 .footer-links_second {
     padding-top: 34px;
-    padding-left: 16px;
+    padding-left: 20px;
 }
 
 .footer-links__list-item {
@@ -1558,6 +1561,7 @@ a {
 
 .copyright {
     padding: 0;
+    padding-top: 2px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
@@ -1879,7 +1883,7 @@ a {
     font-weight: 400;
     margin: 0;
     margin-bottom: 15px;
-    padding: 11px 18px 10px;
+    padding: 10px 19px;
     text-transform: uppercase;
 }
 
@@ -2156,9 +2160,7 @@ a {
     font-size: 13px;
     line-height: 18px;
     background-color: var(--beige);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
+    display: flex;
 }
 
 .sorting__header {
@@ -2166,90 +2168,116 @@ a {
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 12px 19px 10px;
+    padding: 10px 20px;
     margin: 0;
 }
 
-.sorting__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+.sorting__container {
+    display: flex;
 }
 
-.sorting__list-group {
+.sorting__list_attributes {
+    margin-left: 121px;
+}
+
+.sorting__list_direction {
+    margin-left: 46px;
+}
+
+/* sorting-attributes */
+
+.sorting-attributes {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
     display: flex;
     align-items: center;
 }
 
-.sorting__list-item {
+.sorting-attributes__item {
     border-bottom: 1px dotted var(--basic-red);
     text-transform: uppercase;
+    color: var(--black);
+    height: 18px;
+    box-sizing: border-box;
 }
 
-.sorting__list-item_price {
-    margin-right: 70px;
+.sorting-attributes__item_type {
+    margin-left: 70px;
 }
 
-.sorting__list-item_functionality {
-    margin-right: 46px;
+.sorting-attributes__item_functionality {
+    margin-left: 66px;
 }
 
-.sorting__list-item_dir {
-    margin-right: 21px;
-    border: none;
-}
-
-.sorting__list-item_dir:last-child {
-    margin-right: 0;
-}
-
-.sorting__list-item:hover {
+.sorting-attributes__item:hover {
     border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting__list-item_dir:hover {
-    border: none;
-}
-
-.sorting__list-item a {
-    color: var(--black);
+.sorting-attributes__link {
+    color: inherit;
     opacity: 0.3;
 }
 
-.sorting__list-item a:hover {
+.sorting-attributes__link:hover {
     opacity: 1;
 }
 
-.sorting__list-item_current,
-.sorting__list-item_current:hover {
+.sorting-attributes__item_current,
+.sorting-attributes__item_current:hover {
     border-bottom: none;
 }
 
-.sorting__list-item_current a {
+.sorting-attributes__item_current .sorting-attributes__link {
     color: var(--basic-red);
     opacity: 1;
 }
 
-/* sorting-dir */
+/* sorting-direction */
 
-.sorting-dir__link {
+.sorting-direction {
+    list-style: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sorting-direction__item_desc {
+    margin-left: 20px;
+}
+
+.sorting-direction__link {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     width: 12px;
     height: 10px;
+    opacity: 0.3;
 }
 
-.sorting-dir__icon {
+.sorting-direction__link:hover {
+    opacity: 1;
+}
+
+.sorting-direction__icon {
     position: absolute;
 }
 
-.sorting-dir__path {
+.sorting-direction__path {
     fill: var(--black);
 }
 
-.sorting__list-item_current .sorting-dir__path {
+.sorting-direction__item_current .sorting-direction__path {
     fill: var(--basic-red);
+}
+
+.sorting-direction__item_current .sorting-direction__link {
+    opacity: 1;
 }
 
 /* pagination */
