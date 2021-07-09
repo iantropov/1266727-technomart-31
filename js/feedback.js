@@ -19,7 +19,7 @@ try {
     isStorageSupport = false;
 }
 
-feedbackButton.addEventListener("click", function (evt) {
+feedbackButton.addEventListener("click", (evt) => {
     evt.preventDefault();
     feedbackPopup.classList.add("modal_show");
 
@@ -40,13 +40,13 @@ feedbackButton.addEventListener("click", function (evt) {
     }
 });
 
-feedbackClose.addEventListener("click", function (evt) {
+feedbackClose.addEventListener("click", (evt) => {
     evt.preventDefault();
     feedbackPopup.classList.remove("modal_show");
     feedbackPopup.classList.remove("modal_error");
 });
 
-feedbackForm.addEventListener("submit", function (evt) {
+feedbackForm.addEventListener("submit", (evt) => {
     if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
         evt.preventDefault();
         feedbackPopup.classList.remove("modal_error");
@@ -60,7 +60,7 @@ feedbackForm.addEventListener("submit", function (evt) {
     }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", (evt) => {
     if (evt.keyCode === 27) {
         if (feedbackPopup.classList.contains("modal_show")) {
             evt.preventDefault();

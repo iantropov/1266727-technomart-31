@@ -493,7 +493,7 @@
         </div>
     </footer>
 
-    <section class="feedback modal hidden">
+    <section class="feedback modal">
         <h2 class="feedback__header visually-hidden">Форма обратной связи</h2>
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
         <form class="feedback__form feedback-form" action="#" method="post">
@@ -520,7 +520,7 @@
         </form>
     </section>
 
-    <section class="map modal hidden">
+    <section class="map modal">
         <h2 class="map__header visually-hidden">Карта</h2>
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
         <img class="map__image" width="942" height="443" src="img/map-large.jpg" alt="Карта с расположением магазина">
@@ -529,7 +529,7 @@
             width="942" height="443" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
-    <section class="add-to-cart modal hidden">
+    <section class="add-to-cart modal">
         <h2 class="add-to-cart__header visually-hidden">Успешное добавление в корзину</h2>
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
         <div class="add-to-cart__top">
@@ -538,8 +538,8 @@
             </p>
         </div>
         <div class="add-to-cart__bottom">
-            <button class="add-to-cart__button add-to-cart__button_purchase button-link" type="button">Оформить
-                заказ</button>
+            <a class="add-to-cart__button add-to-cart__button_purchase button-link" href="blank.html">Оформить
+                заказ</a>
             <button class="add-to-cart__button add-to-cart__button_continue button-link" type="button">Продолжить
                 покупки</button>
         </div>
@@ -547,6 +547,7 @@
 
     <script src="js/feedback.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/add-to-cart.js"></script>
     <script src="js/features.js"></script>
     <script src="js/services.js"></script>
 </body>

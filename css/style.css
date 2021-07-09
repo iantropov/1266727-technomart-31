@@ -1069,7 +1069,6 @@ a {
 .product__content_buttons {
     display: none;
     padding-right: 4px;
-    margin-top: -3px;
 }
 
 .product:hover .product__content_image,
@@ -1166,6 +1165,7 @@ a {
     padding-left: 24px;
     margin-bottom: 10px;
     position: relative;
+    margin-top: -3px;
 }
 
 .product__button_buy::before {
