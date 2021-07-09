@@ -296,7 +296,6 @@ a {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    height: 42px;
 }
 
 .quick-access__item {
@@ -309,6 +308,7 @@ a {
     padding: 9px;
     display: inline-block;
     vertical-align: top;
+    background-color: var(--basic-greydark);
 }
 
 .quick-access__link:active {
