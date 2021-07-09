@@ -4,19 +4,19 @@ const mapClose = mapPopup.querySelector(".modal__close");
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.remove("hidden");
+    mapPopup.classList.add("modal_show");
 });
 
 mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.add("hidden");
+    mapPopup.classList.remove("modal_show");
 });
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-        if (!mapPopup.classList.contains("hidden")) {
+        if (mapPopup.classList.contains("modal_show")) {
             evt.preventDefault();
-            mapPopup.classList.add("hidden");
+            mapPopup.classList.remove("modal_show");
         }
     }
 });
