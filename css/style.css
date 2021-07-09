@@ -1040,8 +1040,7 @@ a {
     order: 2;
     padding: 0;
     margin: 0;
-    margin-bottom: 7px;
-    margin-top: 17px;
+    margin-bottom: 9px;
 }
 
 .product__link,
@@ -2005,7 +2004,9 @@ a {
     border-radius: 5px;
     background-color: var(--beige);
     font-family: inherit;
-    font-size: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    height: 38px;
     box-sizing: border-box;
 }
 
@@ -2023,7 +2024,7 @@ a {
 }
 
 .filter-manufacturers__header {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .filter-manufacturers__list {
