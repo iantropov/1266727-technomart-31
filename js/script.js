@@ -82,13 +82,6 @@ if (slider) {
 
 const feedbackButton = document.querySelector(".contacts__button");
 const feedbackPopup = document.querySelector(".modal.feedback");
-const feedbackClose = feedbackPopup.querySelector(".modal__close");
-const feedbackForm = feedbackPopup.querySelector(".feedback-form");
-const feedbackName = feedbackPopup.querySelector(".feedback-form__input_name");
-const feedbackEmail = feedbackPopup.querySelector(
-    ".feedback-form__input_email"
-);
-const feedbackText = feedbackPopup.querySelector(".feedback-form__input_text");
 
 let isStorageSupport = true;
 let savedName = "";
@@ -102,6 +95,14 @@ try {
 }
 
 if (feedbackPopup) {
+    const feedbackClose = feedbackPopup.querySelector(".modal__close");
+    const feedbackForm = feedbackPopup.querySelector(".feedback-form");
+    const feedbackName = feedbackPopup.querySelector(".feedback-form__input_name");
+    const feedbackEmail = feedbackPopup.querySelector(
+        ".feedback-form__input_email"
+    );
+    const feedbackText = feedbackPopup.querySelector(".feedback-form__input_text");
+
     feedbackButton.addEventListener("click", (evt) => {
         evt.preventDefault();
         feedbackPopup.classList.add("modal_show");
@@ -162,9 +163,10 @@ if (feedbackPopup) {
 
 const mapLink = document.querySelector(".contacts__link");
 const mapPopup = document.querySelector(".modal.map");
-const mapClose = mapPopup.querySelector(".modal__close");
 
 if (mapPopup) {
+    const mapClose = mapPopup.querySelector(".modal__close");
+
     mapLink.addEventListener("click", (evt) => {
         evt.preventDefault();
         mapPopup.classList.add("modal_show");

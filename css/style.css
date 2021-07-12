@@ -310,6 +310,8 @@ a {
     display: inline-block;
     vertical-align: top;
     background-color: var(--basic-greydark);
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .quick-access__link:active {
